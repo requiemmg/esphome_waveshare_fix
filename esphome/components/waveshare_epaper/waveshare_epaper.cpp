@@ -1494,7 +1494,7 @@ void WaveshareEPaper7P5InV2alt::initialize() {
   // 1-0=11: internal power
   this->data(0x07);  // MMI: changed it from 0x17
   this->data(0x17);  // VGH&VGL
-  this->data(0x26);  // VSH - MMI: changed value from max voltage 0x3F to recommended datasheet value --> reduces black streaks on white vertical space. This setting is comparable to "Contrast" on old crystal liquid displays.
+  this->data(0x3F);  // VSH - MMI: changed value from max voltage 0x3F to recommended datasheet value --> reduces black streaks on white vertical space. This setting is comparable to "Contrast" on old crystal liquid displays.
   this->data(0x26);  // VSL - MMI: same as VSH (High) but for Low
   this->data(0x11);  // VSHR
 
